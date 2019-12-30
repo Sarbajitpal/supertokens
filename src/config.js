@@ -6,17 +6,20 @@ import spaceComplex from "./assets/images/spaceComplex.png";
 import scraping from "./assets/images/scraping.png";
 
 const display = [
-  {
-    image: easeOfUse,
-    heading: "Easy to use and understand",
-    description: "Clean and intuitive set of functions/APIs."
-  },
-  {
-    image: openSource,
-    heading: "Open source",
-    description:
-      "Good documentation and discounted dedicated support for early adopters."
-  },
+  [
+    {
+      image: easeOfUse,
+      heading: "Easy to use and understand",
+      description: "Clean and intuitive set of functions/APIs."
+    },
+    {
+      image: openSource,
+      heading: "Open source",
+      description:
+        "Good documentation and discounted dedicated support for early adopters."
+    }
+  ],
+  [
   {
     image: endToEnd,
     heading: "End-to-end implementation",
@@ -28,8 +31,10 @@ const display = [
     heading: "Long lived sessions",
     description:
       "We provide the best and most secure solution for all use cases. Even the ones where you require your users to be logged in for an extended period of time."
-  },
-  {
+  }
+  ],
+  [
+   {
     image: spaceComplex,
     heading: "Optimal Time and Space Complexity",
     description:
@@ -41,6 +46,7 @@ const display = [
     description:
       "Our session management solution makes it much harder to systematically scrape your data."
   }
+  ]
 ];
 
 export default display;
