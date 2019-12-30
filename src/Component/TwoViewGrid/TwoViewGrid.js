@@ -6,7 +6,7 @@ function TwoViewGrid(props) {
   const { benefits } = props;
   return (
     <Container>
-      <h1>Benefits</h1>
+      <h1 style={{color:"#dddddd"}} className="text-center">Benefits</h1>
       <div>
         {benefits.map(([firstRow, secondRow], index) => {
           return (
@@ -36,14 +36,16 @@ function ContentDisplay(props) {
   const { content } = props;
   return (
     <Col xs={12} md={6}>
-      <div>
+      <div style={{float:"left",width: "17%",height:"100%"}}>
         <img
           src={content.image}
           alt={content.heading}
-          style={{ width: "40px", height: "40px", display: "block" }}
+          style={{ width: "40px", height: "40px"}}
         />
-        <h3 style={{ color: "white" }}>{content.heading}</h3>
-        <p style={{ color: "white" }}>{content.description}</p>
+      </div>
+        <div style={{float:"left",width: "83%",height:"100%"}}>
+        <h2 style={{ color: "rgb(255, 153, 51)",fontSize:"100%"}} >{content.heading}</h2>
+        <h2 style={{ color: "#dddddd",fontSize:"100%" }} >{content.description}</h2>
       </div>
     </Col>
   );
